@@ -48,4 +48,4 @@ stages:
             inputs:
               azureSubscription: $(azureSubscription)
               appName: $(webAppName)
-              package: $(System.DefaultWorkingDirectory)/$(Build.BuildId).zip
+              package: $(System.DefaultWorkingDirectory)
