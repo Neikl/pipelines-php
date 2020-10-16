@@ -5,7 +5,7 @@ variables:
   azureSubscription: 'php-service'
   
   # Web app name
-  webAppName: 'PHP-DEMO'
+  webAppName: 'demo-php-sonata'
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
   # Environment name
@@ -44,8 +44,8 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : PHP-DEMO'
+            displayName: 'Deploy Azure Web App : demo-php-sonata'
             inputs:
               azureSubscription: $(azureSubscription)
               appName: $(webAppName)
-              package: $(System.DefaultWorkingDirectory)/$(Build.BuildId).zip
+              package: $(System.DefaultWorkingDirectory)/*.zip
