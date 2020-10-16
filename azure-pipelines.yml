@@ -13,7 +13,7 @@ variables:
   # Root folder under which your composer.json file is available.
   rootFolder: $(System.DefaultWorkingDirectory)
 stages:
-- stage: Download Build file 
+- stage: DownloadBUild 
   displayName: Download Build file
   variables:
     phpVersion: '7.2'
