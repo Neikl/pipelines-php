@@ -29,7 +29,7 @@ stages:
         feedsToUse: 'internal'
         vstsFeed: 'ad40d9c1-509c-43a0-ac77-e9f953e74080/026ccefc-7dd1-4641-a250-391eb59a33f7'
         vstsFeedPackage: 'a4827469-054e-44b8-8011-e94f17137305'
-        vstsPackageVersion: '0.0.1'
+        vstsPackageVersion: '0.0.3'
 - stage: Deploy
   displayName: 'Deploy Web App'
   dependsOn: DownloadBUild
